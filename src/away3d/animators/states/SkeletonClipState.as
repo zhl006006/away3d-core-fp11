@@ -128,13 +128,13 @@ package away3d.animators.states
 					endPose.orientation.slerp(pose1.orientation, pose2.orientation, _blendWeight);
 				else
 					endPose.orientation.lerp(pose1.orientation, pose2.orientation, _blendWeight);
-				
-				if (i > 0) {
+				//Why do you want to filter out
+				//if (i > 0) {
 					tr = endPose.translation;
 					tr.x = p1.x + _blendWeight*(p2.x - p1.x);
 					tr.y = p1.y + _blendWeight*(p2.y - p1.y);
 					tr.z = p1.z + _blendWeight*(p2.z - p1.z);
-				}
+				//}
 			}
 		}
 		
