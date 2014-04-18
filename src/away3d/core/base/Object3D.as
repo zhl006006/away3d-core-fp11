@@ -495,7 +495,7 @@ package away3d.core.base
 		{
 			transform.copyColumnTo(3, _pos);
 			
-			return _pos.clone();
+			return _pos;
 		}
 		
 		public function set position(value:Vector3D):void
